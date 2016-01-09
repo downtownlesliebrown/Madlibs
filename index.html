@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text.css" href="style.css">
+  </head>
+  <body>
+    <h1>Leslie's Super Dope Madlibs</h1>
+
+        <label for="story-one">Story 1
+            <input type="radio" id="story-one"  name="story">
+      </label>
+      <label for="story-two">Story 2
+            <input type="radio" id="story-two"  name="story">
+      </label>
+      <label for="story-three">Story 3
+            <input type="radio" id="story-three"  name="story">
+      </label>
+    <div id="libs-entry" onsubmit="return false">
+      <label>Please enter four of each word type in their respective boxes. Separate each word with a comma.
+      <br>
+        <input id="input-adjectives" type="text" title="Hit Enter to Submit" placeholder="Adjectives">
+        <input id="input-verbs" type="text" title="Hit Enter to Submit" placeholder="Verbs">
+        <input id="input-nouns" type="text" title="Hit Enter to Submit" placeholder="Nouns">
+        <input id="input-adverbs" type="text" title="Hit Enter to Submit" placeholder="Adverbs">
+      </label>
+      <input onclick="generateStory()"  type="submit" id="submit-btn" name="Generate Story">
+    </div>
+      <br>
+    <div id="full-paragraph"></div>
+  </body>
+  <script type="text/javascript" src="madlibs shorter.js"></script>
+</html>
